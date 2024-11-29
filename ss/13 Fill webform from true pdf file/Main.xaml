@@ -1,0 +1,249 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uisape="clr-namespace:UiPath.IntelligentOCR.StudioWeb.Activities.PDF.ExtractPDFText;assembly=UiPath.IntelligentOCR.StudioWeb.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF.ExtractPDFText</x:String>
+      <x:String>UiPath.IntelligentOCR.StudioWeb.Activities.PDF</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1182.4,1895.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="pdf" />
+      <Variable x:TypeArguments="s:String[]" Name="arr" />
+      <Variable x:TypeArguments="x:Int32" Name="i_" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uisape:ExtractPDFText ApplyOcr="{x:Null}" FilePassword="{x:Null}" OcrEngine="{x:Null}" DisplayName="Extract PDF Text" sap:VirtualizedContainerService.HintSize="449.6,122.4" sap2010:WorkflowViewState.IdRef="ExtractPDFText_1" PdfFile="[LocalResource.FromPath(&quot;form.pdf&quot;)]" Text="[pdf]" />
+    <Assign sap2010:Annotation.AnnotationText="Always use Environment.NewLine instead of '\n'" sap:VirtualizedContainerService.HintSize="449.6,144.8" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[arr]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[pdf.Split({Environment.NewLine},StringSplitOptions.RemoveEmptyEntries)]</InArgument>
+      </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Personal Details" sap:VirtualizedContainerService.HintSize="449.6,1604.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="70b91f9b-127f-48b9-a057-3bfa03a7d3d9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,1364.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="70b91f9b-127f-48b9-a057-3bfa03a7d3d9" Text="[arr(0).Split({&quot;:&quot;},StringSplitOptions.RemoveEmptyEntries)(1).Trim()]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLScCNarcBQqDlLKMBVSow2ElFfQw6UatkuutjuVklW2I9tRq_Q/viewform" CVScreenId="53c08ee7-b4a3-4ab0-b663-feefcb1e8b3e" ContentHash="ibG6_rKIJUmyyWlKOxucQQ" CvElementArea="785, 1002, 659, 64" CvType="InputBox" DesignTimeRectangle="788, 1009, 649, 52" DesignTimeScaleFactor="2.200000047683716" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="5879554d-e84e-4027-ac00-ebfbaf0eddc5" InformativeScreenshot="8098cf059daf7aac57e666b92691f0d9.png" IsResponsive="True" Reference="eZZe9deTb0Cc6LugiN3GPw/f-WtgF3XyESFrdf3tuSVqw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Personal Details' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="53c08ee7-b4a3-4ab0-b663-feefcb1e8b3e" CvTextArea="789, 901, 94, 30" CvTextArgument="Name" CvType="Text" DesignTimeRectangle="788, 890, 94, 53" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='i1' tag='SPAN' type='' class='M7eMe' aaname='Name' check:innerText='Name' /&gt;" Guid="130c06b6-6906-4020-a2c3-05f2c1193e74" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_11" ScopeIdentifier="70b91f9b-127f-48b9-a057-3bfa03a7d3d9" Text="[arr(1).Split({&quot;:&quot;},StringSplitOptions.RemoveEmptyEntries)(1).Trim()]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLScCNarcBQqDlLKMBVSow2ElFfQw6UatkuutjuVklW2I9tRq_Q/viewform" CVScreenId="0ce8982a-16ae-4a0c-a160-8e7ec39361ce" ContentHash="0YBLME4Jo06hDynzMcXvgQ" CvElementArea="785, 1334, 656, 62" CvType="InputBox" DesignTimeRectangle="788, 1338, 649, 53" DesignTimeScaleFactor="2.200000047683716" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='i6 i9' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="269fca73-75df-4771-94c2-3375c9d55dce" InformativeScreenshot="44451cbabcfec64fddd9a2753079b0cd.png" IsResponsive="True" Reference="eZZe9deTb0Cc6LugiN3GPw/j3h41MIwHkisE7XoPlVYtw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Personal Details' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="0ce8982a-16ae-4a0c-a160-8e7ec39361ce" CvTextArea="787, 1227, 88, 34" CvTextArgument="Email" CvType="Text" DesignTimeRectangle="788, 1219, 87, 53" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='i6' tag='SPAN' type='' class='M7eMe' aaname='Email' check:innerText='Email' /&gt;" Guid="8647a7b0-aa2a-480c-b0f8-40f258706ad7" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_12" ScopeIdentifier="70b91f9b-127f-48b9-a057-3bfa03a7d3d9" Text="[arr(2).Split({&quot;:&quot;},StringSplitOptions.RemoveEmptyEntries)(1).Trim()]" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLScCNarcBQqDlLKMBVSow2ElFfQw6UatkuutjuVklW2I9tRq_Q/viewform" CVScreenId="ab7b2c38-5e72-4a1e-9839-0014d0ba3abb" ContentHash="7ulC3cNz8kW9F4dNsyQhFg" CvElementArea="785, 1250, 657, 64" CvType="InputBox" DesignTimeRectangle="788, 1256, 649, 52" DesignTimeScaleFactor="2.200000047683716" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='i11 i14' tag='INPUT' type='text' class='whsOnd zHQkBf' aaname='' /&gt;" Guid="c4b79386-973b-4732-8f61-73f26c37dd88" InformativeScreenshot="fa515e22db4bc0d810773660a443125a.png" IsResponsive="True" Reference="eZZe9deTb0Cc6LugiN3GPw/kn-Xnj5RxUaB_JtdtW8_Ow" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Personal Details' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="ab7b2c38-5e72-4a1e-9839-0014d0ba3abb" CvTextArea="785, 1145, 134, 34" CvTextArgument="Address" CvType="Text" DesignTimeRectangle="788, 1137, 129, 53" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='i11' tag='SPAN' type='' class='M7eMe' aaname='Address' check:innerText='Address' /&gt;" Guid="c4b5744c-d291-4b67-8c1b-98a11e63a7e6" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="70b91f9b-127f-48b9-a057-3bfa03a7d3d9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="docs.google.com/forms/d/e/1FAIpQLScCNarcBQqDlLKMBVSow2ElFfQw6UatkuutjuVklW2I9tRq_Q/viewform" CVScreenId="fbb01166-4f10-4699-bdb8-d6fb1421c180" ContentHash="2GZRZcNBwEukdO1sfqliRw" CvElementArea="730, 1409, 216, 85" CvTextArea="783, 1435, 110, 30" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="733, 1412, 210, 79" DesignTimeScaleFactor="2.200000047683716" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='l4V7wb Fxmcue' aaname='' check:innerText='Submit' /&gt;" Guid="777101a4-ec2f-4a69-93fb-422423d52657" InformativeScreenshot="21de7c54160a256c822c828821113043.png" Reference="eZZe9deTb0Cc6LugiN3GPw/upmSAwx7UEiRzXfkpaDCkQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Personal Details' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit another response'" sap:VirtualizedContainerService.HintSize="382.4,218.4" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="70b91f9b-127f-48b9-a057-3bfa03a7d3d9" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="docs.google.com/forms/u/0/d/e/1FAIpQLScCNarcBQqDlLKMBVSow2ElFfQw6UatkuutjuVklW2I9tRq_Q/formResponse" CVScreenId="de964519-cb7b-4527-ad34-04e0530718c8" ContentHash="HNxRQ0L1KUap4yUybARrXA" CvTextArea="803, 511, 348, 34" CvTextArgument="Submit another response" CvType="Text" DesignTimeRectangle="804, 508, 344, 37" DesignTimeScaleFactor="2.200000047683716" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='' aaname='Submit another response' check:innerText='Submit another response' /&gt;" Guid="e22e8e77-4b99-4c1a-a5e8-3b6c6862df41" InformativeScreenshot="b2df1e0f5a47aa2cf2dab7cb5b06128a.png" Reference="eZZe9deTb0Cc6LugiN3GPw/RfvD9Qs8GESIpc3VEjGS3Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Personal Details' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-13, -13, 2906, 1826" BrowserType="Edge" ContentHash="kyTcsD9wy0SwPQoGr572GA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAA4SURBVDhPY0i32n4AiP+TifeDDMAmQTQeZAbAADIbG0DWQ10DyMGjXhh0XiAHU8WA/eiCxOPtuwEl0a7qam5sogAAAABJRU5ErkJggg==" InformativeScreenshot="de0370fc698da871f9725e09802a9d8e.jpg" Reference="eZZe9deTb0Cc6LugiN3GPw/-MROQWzkeU6MvAIchi5ufg" Selector="&lt;html app='msedge.exe' title='Personal Details' /&gt;" Title="Personal Details" Url="https://docs.google.com/forms/d/e/1FAIpQLScCNarcBQqDlLKMBVSow2ElFfQw6UatkuutjuVklW2I9tRq_Q/viewform" Version="V1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
